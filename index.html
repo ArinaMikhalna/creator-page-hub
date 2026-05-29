@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Creator Page Hub — Public creator pages for TikTok content creators</title>
-  <meta name="description" content="Creator Page Hub is a public web service that helps independent creators and comedy bloggers connect their TikTok account via TikTok OAuth and display their own TikTok videos on a public creator page." />
+  <title>Creator Page Hub — Connect, display & publish your TikTok videos</title>
+  <meta name="description" content="Creator Page Hub is a public web platform for independent creators and comedy bloggers to connect their TikTok account, display their own TikTok videos, and publish new videos to their TikTok account using the TikTok Content Posting API." />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Creator Page Hub — Public creator pages for TikTok content creators" />
-  <meta property="og:description" content="A public web service that helps independent creators connect their TikTok account and display their own TikTok videos on a public creator page." />
+  <meta property="og:title" content="Creator Page Hub — Connect, display & publish your TikTok videos" />
+  <meta property="og:description" content="A public web platform to connect your TikTok account, display your own TikTok videos, and publish new videos using the TikTok Content Posting API." />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -20,9 +20,9 @@
       <nav class="main">
         <ul>
           <li><a href="#what">What it does</a></li>
-          <li><a href="#features">Features</a></li>
+          <li><a href="#publishing">Publishing</a></li>
+          <li><a href="#permissions">Permissions</a></li>
           <li><a href="#how-it-works">How it works</a></li>
-          <li><a href="#faq">FAQ</a></li>
           <li><a href="terms.html">Terms</a></li>
           <li><a href="privacy.html">Privacy</a></li>
           <li><a class="btn btn-primary btn-sm" href="#how-it-works">Connect TikTok</a></li>
@@ -37,15 +37,15 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div>
-          <span class="badge"><span class="dot"></span> Public web service · open to everyone</span>
-          <h1>Your TikTok videos on one public creator page</h1>
-          <p class="lead">A public web service that helps independent creators and comedy bloggers connect their TikTok account and display their own TikTok videos on a public creator page.</p>
+          <span class="badge"><span class="dot"></span> Public web platform · open to everyone</span>
+          <h1>Creator Page Hub</h1>
+          <p class="lead">A public web platform for independent content creators and comedy bloggers to connect their TikTok account, display their own TikTok videos, and publish new videos to their TikTok account using TikTok Content Posting API.</p>
           <div class="btn-row">
             <a class="btn btn-primary" href="#how-it-works">Connect TikTok Account</a>
+            <a class="btn btn-secondary" href="terms.html">View Terms</a>
             <a class="btn btn-secondary" href="privacy.html">View Privacy Policy</a>
-            <a class="btn btn-secondary" href="terms.html">View Terms of Service</a>
           </div>
-          <p class="hero-note">Connect with TikTok OAuth · Show only what you authorize · Revoke access anytime</p>
+          <p class="hero-note">TikTok Login Kit &amp; OAuth · Upload &amp; publish to your own account · Publishing only by direct user action</p>
         </div>
 
         <!-- Creator page mockup -->
@@ -60,7 +60,7 @@
           </div>
           <div class="mock-stats">
             <div><b>128</b> Videos</div>
-            <div><b>Public</b> Page</div>
+            <div><b>Publish</b> Ready</div>
             <div><b>OAuth</b> Verified</div>
           </div>
           <div class="mock-grid">
@@ -77,8 +77,9 @@
         <ul>
           <li><span class="check">✓</span> Public app for external users</li>
           <li><span class="check">✓</span> Connect your own TikTok account</li>
-          <li><span class="check">✓</span> TikTok OAuth authorization</li>
-          <li><span class="check">✓</span> Revoke access anytime</li>
+          <li><span class="check">✓</span> TikTok Login Kit &amp; OAuth</li>
+          <li><span class="check">✓</span> Upload &amp; publish via Content Posting API</li>
+          <li><span class="check">✓</span> Publishing only by direct user action</li>
           <li><span class="check">✓</span> Not an internal company tool</li>
         </ul>
       </div>
@@ -89,69 +90,86 @@
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">What the service does</span>
-          <h2>Show your authorized TikTok videos, your way</h2>
-          <p>Creator Page Hub allows users to connect their own TikTok account using TikTok OAuth and display user-authorized TikTok videos on a public creator page.</p>
+          <h2>Connect, display, and publish your TikTok videos</h2>
+          <p>Creator Page Hub helps users connect their TikTok account, view authorized profile information, display their own TikTok videos on a public creator page, and publish new videos to their own TikTok account.</p>
         </div>
         <ul class="checks">
           <li>Users authorize access through TikTok OAuth.</li>
           <li>Users can display their own TikTok videos on a public creator page.</li>
+          <li>Users can upload and publish videos to their own TikTok account.</li>
           <li>Users can revoke access at any time through TikTok settings.</li>
           <li>The service is available to external users and is not an internal company tool.</li>
         </ul>
       </div>
     </section>
 
-    <!-- Features -->
-    <section id="features" class="alt-bg divider">
+    <!-- TikTok video publishing -->
+    <section id="publishing" class="alt-bg divider">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Features</span>
-          <h2>Everything for a clean public page</h2>
-          <p>A simple way for creators to gather their TikTok content in one shareable place.</p>
+          <span class="eyebrow">TikTok video publishing</span>
+          <h2>Publish to your own TikTok account</h2>
+          <p>Creator Page Hub allows authenticated users to upload and publish videos to their own TikTok account through TikTok Content Posting API. All publishing actions are initiated by the authenticated user.</p>
+        </div>
+        <ul class="checks">
+          <li>Users connect their TikTok account through TikTok Login Kit.</li>
+          <li>Users authorize the required TikTok permissions.</li>
+          <li>Users upload video files inside the platform.</li>
+          <li>Users review the video before publishing.</li>
+          <li>Users click Publish to send the video to their own TikTok account.</li>
+          <li>The platform does not publish content without direct user action.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TikTok permissions we request -->
+    <section id="permissions" class="divider">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Permissions</span>
+          <h2>TikTok permissions we request</h2>
+          <p>Each permission maps directly to a feature you use inside the platform.</p>
         </div>
         <div class="cards">
-          <div class="card">
-            <span class="ico">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
-            </span>
-            <h3>Secure TikTok login</h3>
-            <p>Sign in through official TikTok OAuth — we never see your password.</p>
+          <div class="card perm">
+            <h3>user.info.basic</h3>
+            <p>Used to identify the authenticated TikTok user and connect their account.</p>
           </div>
-          <div class="card">
-            <span class="ico">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-            </span>
-            <h3>Public video gallery</h3>
-            <p>Display the TikTok videos you authorize in a clean, shareable grid.</p>
+          <div class="card perm">
+            <h3>user.info.profile</h3>
+            <p>Used to display the creator's authorized public profile information on their creator page.</p>
           </div>
-          <div class="card">
-            <span class="ico">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/></svg>
-            </span>
-            <h3>Full control</h3>
-            <p>You decide what to show, and you can revoke access at any time.</p>
+          <div class="card perm">
+            <h3>user.info.stats</h3>
+            <p>Used to show authorized creator account statistics inside the user dashboard.</p>
           </div>
-          <div class="card">
-            <span class="ico">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </span>
-            <h3>Privacy first</h3>
-            <p>We only use data you authorize and never sell personal information.</p>
+          <div class="card perm">
+            <h3>video.list</h3>
+            <p>Used to display the user's authorized TikTok videos on their public creator page.</p>
+          </div>
+          <div class="card perm">
+            <h3>video.upload</h3>
+            <p>Used to upload video files selected by the authenticated user.</p>
+          </div>
+          <div class="card perm">
+            <h3>video.publish</h3>
+            <p>Used to publish videos to the authenticated user's own TikTok account after the user clicks Publish.</p>
           </div>
         </div>
+        <p class="perm-note">We only request permissions required for the platform features. Users can revoke access at any time through their TikTok account settings.</p>
       </div>
     </section>
 
     <!-- Who it is for -->
-    <section id="who" class="divider">
+    <section id="who" class="alt-bg divider">
       <div class="container split">
         <div>
           <span class="eyebrow">Who it is for</span>
           <h2>Built for independent creators</h2>
-          <p class="lead">This service is designed for independent content creators, comedy bloggers, small media projects, and creators who want to showcase their own TikTok content on a public page.</p>
+          <p class="lead">This platform is designed for independent content creators, comedy bloggers, small media projects, and creators who want to showcase and publish their own TikTok content.</p>
         </div>
         <div class="audience">
-          <div class="pill">Content creators<span>Showcase your latest work</span></div>
+          <div class="pill">Content creators<span>Showcase &amp; publish your work</span></div>
           <div class="pill">Comedy bloggers<span>Share your funniest clips</span></div>
           <div class="pill">Small media projects<span>One public home for content</span></div>
           <div class="pill">Independent creators<span>Your page, your videos</span></div>
@@ -160,56 +178,66 @@
     </section>
 
     <!-- How it works -->
-    <section id="how-it-works" class="alt-bg divider">
+    <section id="how-it-works" class="divider">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">How it works</span>
-          <h2>Three simple steps</h2>
-          <p>From login to a live public page in minutes — you stay in control the whole way.</p>
+          <h2>Five simple steps</h2>
+          <p>From login to publishing — you stay in control the whole way.</p>
         </div>
         <div class="cards">
           <div class="card">
             <span class="num">1</span>
             <h3>Connect TikTok</h3>
-            <p>User signs in and authorizes access through TikTok OAuth.</p>
+            <p>The user signs in and authorizes access through TikTok Login Kit.</p>
           </div>
           <div class="card">
             <span class="num">2</span>
-            <h3>Fetch authorized content</h3>
-            <p>The service receives only the permissions approved by the user.</p>
+            <h3>Review profile and videos</h3>
+            <p>The platform shows authorized profile information and TikTok videos.</p>
           </div>
           <div class="card">
             <span class="num">3</span>
-            <h3>Display creator videos</h3>
-            <p>The user's TikTok videos are shown on their public creator page.</p>
+            <h3>Create a creator page</h3>
+            <p>The user can display their own TikTok videos on a public page.</p>
+          </div>
+          <div class="card">
+            <span class="num">4</span>
+            <h3>Upload video</h3>
+            <p>The user selects a video file to upload.</p>
+          </div>
+          <div class="card">
+            <span class="num">5</span>
+            <h3>Publish to TikTok</h3>
+            <p>The user clicks Publish and the video is published to their own TikTok account through TikTok Content Posting API.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Data & privacy -->
-    <section id="data" class="divider">
+    <!-- User control and safety -->
+    <section id="control" class="alt-bg divider">
       <div class="container split">
         <div>
-          <span class="eyebrow">Data &amp; privacy</span>
-          <h2>You stay in control of your data</h2>
-          <p>We only use TikTok data authorized by the user. We do not sell personal data. Users can revoke access at any time.</p>
+          <span class="eyebrow">User control</span>
+          <h2>You are always in control</h2>
+          <p>Creator Page Hub does not publish videos automatically. Every publishing action requires direct user action. Users can disconnect their TikTok account at any time through TikTok settings.</p>
           <div class="btn-row">
             <a class="btn btn-primary" href="privacy.html">Read the Privacy Policy</a>
             <a class="btn btn-ghost" href="terms.html">Read the Terms</a>
           </div>
         </div>
         <ul class="checks">
-          <li>We only use TikTok data authorized by the user through TikTok OAuth.</li>
-          <li>We do not sell personal data to anyone.</li>
-          <li>Access can be revoked at any time through TikTok settings.</li>
-          <li>You can contact us to request deletion of your data.</li>
+          <li>No automatic publishing without user action.</li>
+          <li>No publishing to accounts the user does not own.</li>
+          <li>No sale of personal data.</li>
+          <li>Users can revoke TikTok access at any time.</li>
         </ul>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="alt-bg divider">
+    <section id="faq" class="divider">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">FAQ</span>
@@ -218,15 +246,19 @@
         <div class="faq">
           <details open>
             <summary>Is Creator Page Hub a public service?</summary>
-            <p>Yes. Creator Page Hub is a public web service available to external users. It is not an internal company tool.</p>
+            <p>Yes. Creator Page Hub is a public web platform available to external users. It is not an internal company tool.</p>
           </details>
           <details>
             <summary>How do I connect my TikTok account?</summary>
-            <p>You sign in and authorize access through TikTok OAuth. The service only receives the permissions you approve.</p>
+            <p>You sign in and authorize access through TikTok Login Kit and OAuth. The platform only receives the permissions you approve.</p>
           </details>
           <details>
-            <summary>What data do you access?</summary>
-            <p>We only access the TikTok account information and videos you authorize through TikTok OAuth, plus the technical information needed to operate the service.</p>
+            <summary>Can I publish videos to my TikTok account?</summary>
+            <p>Yes. You can upload a video file inside the platform, review it, and click Publish to send it to your own TikTok account through the TikTok Content Posting API.</p>
+          </details>
+          <details>
+            <summary>Does the platform publish anything automatically?</summary>
+            <p>No. The platform never publishes automatically. Every upload and publish action requires your direct action, and it only publishes to your own account.</p>
           </details>
           <details>
             <summary>Can I revoke access?</summary>
@@ -243,8 +275,8 @@
     <!-- CTA -->
     <section class="cta">
       <div class="container">
-        <h2>Ready to build your public creator page?</h2>
-        <p>Connect your TikTok account, choose the videos you want to show, and share one clean public link.</p>
+        <h2>Ready to connect and publish?</h2>
+        <p>Connect your TikTok account, build your public creator page, and publish new videos to your own account — all in one place.</p>
         <div class="btn-row">
           <a class="btn btn-primary" href="#how-it-works">Connect TikTok Account</a>
           <a class="btn btn-secondary" href="privacy.html">View Privacy Policy</a>
@@ -259,14 +291,15 @@
       <div class="footer-top">
         <div>
           <div class="brand"><span class="logo">C</span> Creator Page Hub</div>
-          <p class="footer-about">A public web service that helps independent creators connect their TikTok account and display their own TikTok videos on a public creator page.</p>
+          <p class="footer-about">A public web platform that helps independent creators connect their TikTok account, display their own TikTok videos, and publish new videos to their own TikTok account through TikTok Content Posting API.</p>
         </div>
         <div class="footer-cols">
           <div class="footer-col">
             <h4>Product</h4>
             <ul>
               <li><a href="#what">What it does</a></li>
-              <li><a href="#features">Features</a></li>
+              <li><a href="#publishing">Publishing</a></li>
+              <li><a href="#permissions">Permissions</a></li>
               <li><a href="#how-it-works">How it works</a></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>
@@ -281,7 +314,7 @@
           <div class="footer-col">
             <h4>Contact</h4>
             <ul>
-              <li><a href="mailto:smm.am.agency@gmail.com">smm.am.agency@gmail.com</a></li>
+              <li><a href="mailto:arina0shulga@gmail.com">arina0shulga@gmail.com</a></li>
             </ul>
           </div>
         </div>
